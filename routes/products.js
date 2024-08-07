@@ -4,5 +4,5 @@ const productsController = require('../controllers/productsController')
 
 /* GET users listing. */
 router.get('/', productsController.getAllproducts)
-
+router.post('/', productsController.createProducts)
 module.exports = router;

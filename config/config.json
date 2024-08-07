@@ -4,13 +4,7 @@
     "password": "1234",
     "database": "dripstore",
     "host": "127.0.0.1",
-    "dialect": "mariadb"
+    "dialect": "mariadb",
+    "port":"3307"
   }
 }
-
-
-
-
-
-
-
