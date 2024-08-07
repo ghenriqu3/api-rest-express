@@ -1,8 +1,8 @@
-const { Products } = require('../models/');
+const { products } = require('../models');
 // const db = require('../models/index')
 
 const getAllproducts = async (req, res,) => {
-        const allProducts = await Products.findAll();
+        const allProducts = await products.findAll();
         res.json(allProducts);
 }
 
