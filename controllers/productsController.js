@@ -1,11 +1,11 @@
-const Prod = require('../models/Prod')
-
+const { Products } = require('../models/');
+// const db = require('../models/index')
 
 const getAllproducts = async (req, res,) => {
-    const products = await Prod.getAll()
-      res.send(products);
+        const allProducts = await Products.findAll();
+        res.json(allProducts);
 }
 
-module.exports = {
+module.exports = { 
     getAllproducts
 }
